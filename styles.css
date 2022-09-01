@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+:root{
+    box-sizing: border-box;
+    font-family: "Space Grotesk";
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+*{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    min-width: 1440px;
+    max-width: 1440px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.left{
+    width: 40%;
+    background: url("images/bg-main-desktop.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.card{
+    width: 80%;
+    height: 20%;
+    border-radius: 15px;
+    padding: 10px 20px;
+    min-height: 150px;
+}
+.first{
+    position: absolute;
+    top: 200px;
+    right: -50px;
+    background: url("images/bg-card-front.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    text-transform: uppercase;
+}
+#card-logo{
+    width: 60px;
+}
+
+.lower-card{
+    display: flex;
+    justify-content: space-between;
+}
+.second{
+    position: absolute;
+    right: -150px;
+    background: url("images/bg-card-back.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#CVC{
+    margin-right: 10%;
+}
+.right{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-transform: uppercase;
+}
+input:not(#month, #year){
+    width: 99%;
+}
+
+#month, #year{
+    width: 49%;
+}
+
+
+.none{
+    display: none;
+}
