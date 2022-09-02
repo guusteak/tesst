@@ -60,6 +60,9 @@ function validate (argumentpassed) {
     if(document.getElementById("a"+argumentpassed).value!=""){
         document.getElementById("b"+argumentpassed).classList.add("none");
         console.log("everything is ok!")}
+        /*
+        TODO: add functionality depending on input type
+        */
         
     
     else{
