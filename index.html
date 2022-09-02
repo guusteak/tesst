@@ -25,31 +25,35 @@
     </div>
   </div>    
   <div class="right">
-    <form method="post" action="whatever.php">
-      <label for="user-name">Cardholder Name<br>
-        <input id="user-name" type="text" required placeholder="e.g. Jane Appleseed">
+    <div class="form" >
+      <label for="a1">Cardholder Name<br>
+        <input id="a1" type="text" required placeholder="e.g. Jane Appleseed">
+        <p class="alert none" id="b1">This field cannot be empty</p>
       </label>
-      <label for="user-card-number">Card Number<br>
-        <input id="user-card-number" type="number" placeholder="e.g. 1234 5678 9123 0000">
+      <label for="a2">Card Number<br>
+        <input id="a2" type="number" placeholder="e.g. 1234 5678 9123 0000">
+        <p class="alert none" id="b2">This field cannot be empty</p>
       </label>
      <div class="double">
         <label id="exp-date" for="exp-date">Exp. Date (MM/YY)<br>
          <div id="expo">
-            <input type="number" placeholder="MM" class="exp-date" id="month">
-            <input type="number" placeholder="YY" class="exp-date" id="year">
+            <input type="number" placeholder="MM" class="exp-date" id="a3">
+             <input type="number" placeholder="YY" class="exp-date" id="a4">
          </div>
+         <p class="alert none" id="b3" >This field cannot be empty</p>
         </label>
-        <label id="user-cvc" for="user-cvc">CVC<br>
-          <input type="number" id="user-cvc" placeholder="e.g. 123">
+        <label id="user-cvc" for="a5">CVC<br>
+          <input type="number" id="a5" placeholder="e.g. 123">
+          <p class="alert none" id="b5">This field cannot be empty</p>
         </label>
      </div>
       <button type="submit">Confirm</button>
-    </form>
+    </div>
   
   </div> 
   <!-- Completed state start -->
 
-  <div class="none">
+  <div id="bottom" class="none">
     Thank you!
     We've added your card details
     Continue

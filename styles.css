@@ -81,13 +81,13 @@ body{
     align-items: center;
     justify-content: center;
 }
-form{
+.form{
     display: flex;
     flex-direction: column;
     width: 50%;
     text-transform: uppercase;
 }
-input:not(#month, #year){
+input:not(#a3, #a4){
     width: 99%;
     display: flex;
     min-height: 40px;
@@ -107,7 +107,7 @@ input{
     display: flex;
     gap: 5%;
 }
-#month, #year{
+#a3, #a4{
     display: flex;
     min-height: 40px;
     text-align: left;
@@ -138,4 +138,10 @@ button{
     border-radius: 8px;
     background-color: hsl(278, 68%, 11%);
     color: white;
+}
+
+.alert{
+    color: red;
+    text-transform: capitalize;
+    font-size: 15px;
 }
