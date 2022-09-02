@@ -17,7 +17,7 @@
       <p id="zeros">0000 0000 0000 0000</p>
       <div class="lower-card">
         <p id="name">Jane Appleseed</p>
-        <p id="datum">00/00</p>
+        <p id="datum"><span id="month">00</span>/<span id="year">00</span></p>
       </div>
     </div>
     <div class="second card">
@@ -38,7 +38,7 @@
         <label id="exp-date" for="exp-date">Exp. Date (MM/YY)<br>
          <div id="expo">
             <input type="number" placeholder="MM" class="exp-date" id="a3">
-             <input type="number" placeholder="YY" class="exp-date" id="a4">
+            <input type="number" placeholder="YY" class="exp-date" id="a4">
          </div>
          <p class="alert none" id="b3" >This field cannot be empty</p>
         </label>
@@ -54,9 +54,14 @@
   <!-- Completed state start -->
 
   <div id="bottom" class="none">
-    Thank you!
-    We've added your card details
-    Continue
+   <div class="goodbye">
+      <section class="bye">
+        <img src="images/icon-complete.svg">
+        <h2>Thank you!</h2>
+        <p>We've added your card details</>
+        <button type="submit">Continue</button>
+      </section>
+   </div>
   </div>
 
 </body>
