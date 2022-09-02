@@ -31,7 +31,7 @@ body{
     position: relative;
 }
 .card{
-    width: 80%;
+    width: 60%;
     height: 20%;
     border-radius: 15px;
     padding: 10px 20px;
@@ -89,13 +89,53 @@ form{
 }
 input:not(#month, #year){
     width: 99%;
+    display: flex;
+    min-height: 40px;
+    text-align: left;
+    padding-left: 10px;
 }
 
+input{
+    border-radius: 8px;
+}
+
+#exp-date{
+    width: 50%;
+}
+
+#expo{
+    display: flex;
+    gap: 5%;
+}
 #month, #year{
-    width: 49%;
+    display: flex;
+    min-height: 40px;
+    text-align: left;
+    padding-left: 10px;
+    width: 50%;
+    border: 1px solid black;
 }
 
+.double{
+    display: flex;
+    width: 100%;
+    gap: 10%;
+}
+
+#user-cvc{
+    width: 50%;
+}
 
 .none{
     display: none;
+}
+
+button{
+    margin-top: 20px;
+    height: 50px;
+    font-family: "Space Grotesk";
+    border: none;
+    border-radius: 8px;
+    background-color: hsl(278, 68%, 11%);
+    color: white;
 }

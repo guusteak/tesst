@@ -32,13 +32,17 @@
       <label for="user-card-number">Card Number<br>
         <input id="user-card-number" type="number" placeholder="e.g. 1234 5678 9123 0000">
       </label>
-      <label for="exp-date">Exp. Date (MM/YY)<br>
-        <input type="number" placeholder="MM" class="exp-date" id="month">
-        <input type="number" placeholder="YY" class="exp-date" id="year">
-      </label>
-      <label for="user-cvc">CVC<br>
-        <input type="number" id="user-cvc" placeholder="e.g. 123">
-      </label>
+     <div class="double">
+        <label id="exp-date" for="exp-date">Exp. Date (MM/YY)<br>
+         <div id="expo">
+            <input type="number" placeholder="MM" class="exp-date" id="month">
+            <input type="number" placeholder="YY" class="exp-date" id="year">
+         </div>
+        </label>
+        <label id="user-cvc" for="user-cvc">CVC<br>
+          <input type="number" id="user-cvc" placeholder="e.g. 123">
+        </label>
+     </div>
       <button type="submit">Confirm</button>
     </form>
   
