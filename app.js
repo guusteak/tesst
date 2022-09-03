@@ -61,7 +61,7 @@ function validate (argumentpassed) {
         document.getElementById("b"+argumentpassed).classList.add("none");
         console.log("everything is ok!")}
         /*
-        TODO: add functionality depending on input type
+        TODO: handle basic errors
         */
         
     
